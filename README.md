@@ -26,7 +26,7 @@ allprojects {
 然后再Module的build.gradle中引入TopOn Adapter的包，根据项目情况选择
 ```groovy
 // GP
-implementation "com.flatads.adapter.topon:1.4.15"
+implementation "com.flatads.adapter.topon:1.4.15-GP"
 
 // 线下
 implementation "com.flatads.adapter.topon:1.4.15"
