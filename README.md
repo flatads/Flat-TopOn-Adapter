@@ -12,16 +12,18 @@
 ```groovy
 buildscript {
     repositories {
-        maven {url "http://maven.flat-ads.com/repository/maven-public/"}
-        maven { url  "https://jitpack.io" }
+        maven { url "https://maven.flat-ads.com/repository/maven-public/"}
+        maven { url "https://jitpack.io" }
     }
 }
 allprojects {
     repositories {
-        maven {url "http://maven.flat-ads.com/repository/maven-public/"}
-        maven { url  "https://jitpack.io" }
+        maven { url "https://maven.flat-ads.com/repository/maven-public/"}
+        maven { url "https://jitpack.io" }
     }
 }
+
+classpath("io.github.prototypez:app-joint:1.7")
 ```
 然后再Module的build.gradle中引入TopOn Adapter的包，根据项目情况选择
 ```groovy
