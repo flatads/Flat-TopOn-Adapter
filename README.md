@@ -28,10 +28,10 @@ classpath("io.github.prototypez:app-joint:1.7")
 然后再Module的build.gradle中引入TopOn Adapter的包，根据项目情况选择
 ```groovy
 // GP
-implementation "com.flatads.adapter.topon:1.4.15-GP"
+implementation "com.flatads.adapter:topon:1.4.15-GP"
 
 // 线下
-implementation "com.flatads.adapter.topon:1.4.15"
+implementation "com.flatads.adapter:topon:1.4.15"
 ```
 ## 在TopOn用户界面中定义Adapter
 * 配置ClassName
