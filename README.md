@@ -12,13 +12,13 @@
 ```groovy
 buildscript {
     repositories {
-        maven { url "https://maven.flat-ads.com/repository/maven-public/"}
+        maven { url "https://maven-pub.flat-ads.com/repository/maven-public/"}
         maven { url "https://jitpack.io" }
     }
 }
 allprojects {
     repositories {
-        maven { url "https://maven.flat-ads.com/repository/maven-public/"}
+        maven { url "https://maven-pub.flat-ads.com/repository/maven-public/"}
         maven { url "https://jitpack.io" }
     }
 }
