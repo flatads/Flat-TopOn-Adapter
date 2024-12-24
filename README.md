@@ -68,7 +68,7 @@
 
 ① 在添加Flat广告平台的广告源时，需要填写该广告源的参数。
 
-
+![11](res/topon_11.png)
 
 ② 广告源的参数将通过TopOn SDK传递给Flat广告平台的Adapter使用。
 
