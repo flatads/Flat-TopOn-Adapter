@@ -16,11 +16,21 @@
 
 ![topon_1](res/topon_1.png)
 
-② 填写Flat广告平台信息和填写需要使用的广告样式的Adapter
+② 填写Flat广告平台信息
+
+![topon_8](res/topon_8.png)
+
+③ 添加应用和广告源维度配置的参数: **app_id**, **app_token**, **ad_unit_id**.
+
+| ⚠️ 注意：填写需要注意key值的大小写和下划线.
+
+![topon_9](res/topon_9.png)
+
+④ 填写需要使用的广告样式的Adapter
 
 | ⚠️ 注意：Android平台请填写如下图所示 Adapter 的全路径类名, 必须使用Flat类名且一致.
 
-![topon_2](res/topon_2.png)
+![img_param](res/img_param.png)
 
 #### 广告类型对应关系
 
@@ -32,10 +42,6 @@
 |原生| Native(NativeAd)|com.flatads.adapter.topon.FlatNativeAdapter|否 |
 ---
 
-
-#### (2) 查看Flat广告平台的Network Firm ID
-
-TopOn SDK支持在回调中返回广告源的信息，其中包括当前广告源所属的广告平台。您可以在广告平台列表中查看已添加的自定义广告平台的Network Firm ID
 
 ![topon_3](res/topon_3.png)
 
@@ -49,7 +55,14 @@ TopOn SDK支持在回调中返回广告源的信息，其中包括当前广告�
 
 ### Step3. 创建Flat广告平台的应用和广告位
 
-在您需要添加的Flat广告平台上创建应用和广告位等信息（请联系商务获取）
+在您需要添加的Flat广告平台上创建应用和广告位等信息（**请联系商务获取**）
+
+获取到如下示例信息
+
+```json 
+// 示例如下
+{"app_id":"EWAHVE8S","app_token":"uihjbnklnm78gyhu","ad_unit_id":"5d47fad0-b7a4-11eb-80ed-032568831082"}
+```
 
 ### Step4. 添加Topon自定义广告平台的Flat广告源
 
@@ -57,20 +70,18 @@ TopOn SDK支持在回调中返回广告源的信息，其中包括当前广告�
 
 ① 在添加Flat广告平台的广告源时，需要填写该广告源的参数。
 
+
+
 ② 广告源的参数将通过TopOn SDK传递给Flat广告平台的Adapter使用。
 
 | 若已在广告平台账号管理页面，有添加应用和广告源参数，则在添加广告源的时候可以看到对应的参数可以直接填写
 
-![topon_6](res/topon_6.png)
+![10](res/topon_10.png)
 
 ③ 必须在参数中包含Flat Ads 广告平台 SDK需要的全部参数: 1. App ID (应用ID), 2. App token (应用秘钥), 3.Ad Unit ID (广告位ID)。
 
 ![img_class_name.png](res/img_class_name.png)
 
-```json 
-// 示例如下
-{"app_id":"EWAHVE8S","app_token":"uihjbnklnm78gyhu","ad_unit_id":"5d47fad0-b7a4-11eb-80ed-032568831082"}
-```
 
 ④ 最后下发的参数以页面显示的【下发配置】显示内容为准
 
